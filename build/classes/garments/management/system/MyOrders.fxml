@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="garments.management.system.MyOrdersController">
+    <stylesheets>
+        <URL value="@dashboard.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="738.0" prefWidth="1064.0" styleClass="right-pane" stylesheets="@dashboard.css">
+         <children>
+            <Pane prefHeight="738.0" prefWidth="300.0" styleClass="left-pane" stylesheets="@dashboard.css">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="400.0" layoutX="75.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@bags-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="18.0" layoutY="165.0" mnemonicParsing="false" onAction="#gotodashboardpage" prefHeight="63.0" prefWidth="268.0" styleClass="btn" stylesheets="@dashboard.css" text="Dashboard">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="ARCHIVE" layoutX="44.0" layoutY="209.0" size="32" text="" />
+                  <Button layoutX="21.0" layoutY="237.0" mnemonicParsing="false" onAction="#gotoBestSellingPage" prefHeight="49.0" prefWidth="268.0" styleClass="btn" stylesheets="@dashboard.css" text="Best selling">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="HEART" layoutX="44.0" layoutY="274.0" size="32" text="" />
+                  <Button layoutX="21.0" layoutY="301.0" mnemonicParsing="false" onAction="#gotomakeorderpage" prefHeight="49.0" prefWidth="268.0" styleClass="btn" text="Make Order">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="MONEY" layoutX="42.0" layoutY="338.0" size="32" text="" />
+                  <Button layoutX="16.0" layoutY="355.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="268.0" style="-fx-text-fill: indigo;" styleClass="btn" stylesheets="@dashboard.css" text="My Orders">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="CLIPBOARD" layoutX="31.0" layoutY="400.0" size="32" text="" />
+                  <Button layoutX="21.0" layoutY="433.0" mnemonicParsing="false" onAction="#gotouserprofilepage" prefHeight="49.0" prefWidth="268.0" styleClass="btn" stylesheets="@dashboard.css" text="User Profile">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="USER" layoutX="46.0" layoutY="470.0" size="32" text="" />
+                  <Button layoutX="16.0" layoutY="492.0" mnemonicParsing="false" onAction="#gotomycartpage" prefHeight="49.0" prefWidth="268.0" styleClass="btn" stylesheets="@dashboard.css" text="My Cart">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <ImageView fitHeight="49.0" fitWidth="62.0" layoutX="38.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cart.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="300.0" layoutY="13.0" prefHeight="63.0" prefWidth="685.0" styleClass="title" stylesheets="@dashboard.css">
+               <children>
+                  <Label layoutX="40.0" layoutY="8.0" text="Welcome to MNR Garments !">
+                     <font>
+                        <Font name="Times New Roman Bold" size="44.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <TableView fx:id="table" layoutX="316.0" layoutY="95.0" prefHeight="429.0" prefWidth="735.0">
+              <columns>
+                <TableColumn fx:id="oid" prefWidth="97.66665649414062" text="Order Date" />
+                <TableColumn fx:id="name" prefWidth="181.33331298828125" text="Product Name" />
+                  <TableColumn fx:id="color" prefWidth="68.66668701171875" text="Color" />
+                  <TableColumn fx:id="size" prefWidth="55.3333740234375" text="Size" />
+                  <TableColumn fx:id="q" minWidth="7.6666259765625" prefWidth="66.0" text="Quantity" />
+                  <TableColumn fx:id="up" prefWidth="71.6666259765625" text="Unit Price" />
+                  <TableColumn fx:id="tp" prefWidth="77.3333740234375" text="Total Price" />
+                  <TableColumn fx:id="s" prefWidth="112.33331298828125" text="Status" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

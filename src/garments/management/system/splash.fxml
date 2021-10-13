@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="garments.management.system.SplashController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: black;">
+         <children>
+            <StackPane prefHeight="500.0" prefWidth="621.0">
+               <children>
+                  <Circle fx:id="c2" fill="TRANSPARENT" radius="67.0" stroke="#2a17dd" strokeType="INSIDE" strokeWidth="7.0" style="-fx-stroke-dash-array: 40;">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="c3" fill="TRANSPARENT" radius="43.0" stroke="#14a1ff" strokeType="INSIDE" strokeWidth="5.0" style="-fx-stroke-dash-array: 30;">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Circle>
+                  <Circle fx:id="c1" fill="TRANSPARENT" radius="100.0" stroke="#1891db" strokeType="INSIDE" strokeWidth="10.0" style="-fx-stroke-dash-array: 50;">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Circle>
+                  <ProgressBar fx:id="bar" prefHeight="18.0" prefWidth="425.0" progress="0.0">
+                     <StackPane.margin>
+                        <Insets top="320.0" />
+                     </StackPane.margin>
+                  </ProgressBar>
+                  <Label fx:id="progress" text="0%" textFill="#fdf5f5">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="garments.management.system.MakeOrderController">
+    <stylesheets>
+        <URL value="@dashboard.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="650.0" prefWidth="1000.0" styleClass="right-pane" stylesheets="@dashboard.css">
+         <children>
+            <Pane prefHeight="650.0" prefWidth="300.0" styleClass="left-pane" stylesheets="@dashboard.css">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="400.0" layoutX="75.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@bags-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="18.0" layoutY="165.0" mnemonicParsing="false" onAction="#gotodashboardpage" prefHeight="63.0" prefWidth="268.0" styleClass="btn" stylesheets="@dashboard.css" text="Dashboard">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="ARCHIVE" layoutX="44.0" layoutY="209.0" size="32" text="" />
+                  <Button layoutX="21.0" layoutY="237.0" mnemonicParsing="false" onAction="#gotoBestSellingPage" prefHeight="49.0" prefWidth="268.0" styleClass="btn" stylesheets="@dashboard.css" text="Best Selling">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="HEART" layoutX="44.0" layoutY="274.0" size="32" text="" />
+                  <Button layoutX="21.0" layoutY="301.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="268.0" styleClass="textfield" />
+                  <Label layoutX="88.0" layoutY="306.0" styleClass="btn" stylesheets="@dashboard.css" text="Make Order" textFill="INDIGO">
+                     <font>
+                        <Font name="Segoe UI Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView glyphName="MONEY" layoutX="43.0" layoutY="336.0" size="32" text="" />
+                  <Button layoutX="21.0" layoutY="361.0" mnemonicParsing="false" onAction="#gotomyorderspage" prefHeight="49.0" prefWidth="268.0" styleClass="btn" stylesheets="@dashboard.css" text="My Orders">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="CLIPBOARD" layoutX="44.0" layoutY="396.0" size="32" text="" />
+                  <Button layoutX="21.0" layoutY="420.0" mnemonicParsing="false" onAction="#gotouserprofilepage" prefHeight="49.0" prefWidth="268.0" styleClass="btn" stylesheets="@dashboard.css" text="User Profile">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="USER" layoutX="47.0" layoutY="455.0" size="32" text="" />
+                  <Button layoutX="21.0" layoutY="483.0" mnemonicParsing="false" onAction="#gotomycartpage" prefHeight="49.0" prefWidth="268.0" styleClass="btn" text="My Cart">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <ImageView fitHeight="49.0" fitWidth="62.0" layoutX="35.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cart.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="300.0" layoutY="13.0" prefHeight="63.0" prefWidth="685.0" styleClass="title" stylesheets="@dashboard.css">
+               <children>
+                  <Label layoutX="40.0" layoutY="8.0" text="Welcome to MNR Garments !">
+                     <font>
+                        <Font name="Times New Roman Bold" size="44.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            
+            
+            <Label layoutX="326.0" layoutY="199.0" text="Product List" textFill="#2196f3">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="327.0" layoutY="249.0" text="Size" textFill="#2196f3">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="327.0" layoutY="296.0" text="Color" textFill="#2196f3">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="327.0" layoutY="343.0" text="Quantity" textFill="#2196f3">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="combo1" layoutX="479.0" layoutY="197.0" onAction="#Select" prefHeight="33.0" prefWidth="164.0" promptText="Choose item" />
+            <ComboBox fx:id="combo2" layoutX="479.0" layoutY="247.0" prefHeight="33.0" prefWidth="164.0" promptText="Select size" />
+            <ComboBox fx:id="combo3" layoutX="479.0" layoutY="294.0" prefHeight="33.0" prefWidth="164.0" promptText="Select color" />
+            <TextField fx:id="Quantity" layoutX="479.0" layoutY="341.0" prefHeight="33.0" prefWidth="164.0">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="imageview1" fitHeight="344.0" fitWidth="285.0" layoutX="682.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="479.0" layoutY="479.0" mnemonicParsing="false" onAction="#AddToCart" prefHeight="25.0" prefWidth="164.0" stylesheets="@homepage.css" text="Add To Cart" />
+            <Label layoutX="323.0" layoutY="401.0" prefHeight="29.0" prefWidth="116.0" text="Unit Price" textFill="#2196f3">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="price" editable="false" layoutX="479.0" layoutY="397.0" prefHeight="33.0" prefWidth="164.0" />
+            <Label prefHeight="39.0" prefWidth="105.0" text="user Email" textFill="#2196f3">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="479.0" layoutY="528.0" mnemonicParsing="false" onAction="#makeorderagain" prefHeight="25.0" prefWidth="164.0" stylesheets="@homepage.css" text="Add more" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

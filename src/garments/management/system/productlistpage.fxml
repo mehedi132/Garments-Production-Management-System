@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="866.0" prefWidth="1206.0" style="-fx-background-color: #2F2B43;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="garments.management.system.ProductlistpageController">
+   <children>
+      <AnchorPane prefHeight="649.0" prefWidth="498.0" style="-fx-background-color: #393351;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TitledPane layoutX="22.0" layoutY="30.0" prefHeight="54.0" prefWidth="418.0" text="Product list Table">
+               <font>
+                  <Font name="Bauhaus 93" size="28.0" />
+               </font>
+            </TitledPane>
+            <Label layoutX="16.0" layoutY="126.0" prefHeight="45.0" prefWidth="226.0" text="Product id" textFill="RED" AnchorPane.leftAnchor="16.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="239.0" prefHeight="56.0" prefWidth="203.0" text="Description" textFill="RED" AnchorPane.leftAnchor="16.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="id" layoutX="241.0" layoutY="129.0" prefHeight="39.0" prefWidth="203.0" promptText="product id" AnchorPane.leftAnchor="241.0" AnchorPane.topAnchor="129.0">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <Label layoutX="16.0" layoutY="305.0" prefHeight="45.0" prefWidth="169.0" text="Size" textFill="RED" AnchorPane.leftAnchor="16.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="description" layoutX="241.0" layoutY="248.0" prefHeight="39.0" prefWidth="203.0" promptText="Description" AnchorPane.leftAnchor="241.0">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <Label layoutX="14.0" layoutY="362.0" prefHeight="45.0" prefWidth="194.0" text="Accessories" textFill="RED" AnchorPane.leftAnchor="14.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="accessoris" layoutX="241.0" layoutY="369.0" prefHeight="39.0" prefWidth="203.0" promptText="Accessories" AnchorPane.leftAnchor="241.0">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <Label layoutX="13.0" layoutY="422.0" prefHeight="45.0" prefWidth="218.0" text="Making cost" textFill="RED" AnchorPane.leftAnchor="13.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="updateButton" layoutX="164.0" layoutY="681.0" mnemonicParsing="false" onAction="#updateAction" prefHeight="48.0" prefWidth="109.0" style="-fx-background-color: yellow;" stylesheets="@style.css" text="update" AnchorPane.leftAnchor="164.0">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="insertButton" layoutX="38.0" layoutY="681.0" mnemonicParsing="false" onAction="#insertAction" prefHeight="45.0" prefWidth="98.0" style="-fx-background-color: green;" stylesheets="@style.css" text="insert" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="backtohome" layoutX="96.0" layoutY="767.0" mnemonicParsing="false" onAction="#gotohomepageOnAction" prefHeight="45.0" prefWidth="245.0" style="-fx-background-color: #2196f3;" text="Back to Home">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <TextField fx:id="size" layoutX="241.0" layoutY="306.0" prefHeight="39.0" prefWidth="203.0" promptText="Size" AnchorPane.leftAnchor="241.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="16.0" layoutY="181.0" prefHeight="45.0" prefWidth="188.0" text="Product name" textFill="RED">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="name" layoutX="241.0" layoutY="187.0" prefHeight="39.0" prefWidth="203.0" promptText="product name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="13.0" layoutY="480.0" prefHeight="45.0" prefWidth="203.0" text="Unit Price" textFill="RED">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="uprice" layoutX="240.0" layoutY="480.0" prefHeight="39.0" prefWidth="203.0" promptText="unit price">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="mcost" layoutX="241.0" layoutY="425.0" prefHeight="39.0" prefWidth="203.0" promptText="making cost">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="DeleteButton" layoutX="294.0" layoutY="681.0" mnemonicParsing="false" onAction="#DeleteAction" prefHeight="45.0" prefWidth="98.0" style="-fx-background-color: red;" stylesheets="@style.css" text="delete">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <Pane layoutX="428.0" layoutY="46.0" prefHeight="858.0" prefWidth="749.0" AnchorPane.bottomAnchor="-38.0" AnchorPane.leftAnchor="428.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="46.0">
+         <children>
+            <Pane layoutX="97.0" layoutY="-210.0" prefHeight="303.0" prefWidth="467.0" rotate="41.6" style="-fx-background-color: #2196f3; -fx-background-radius: 70;" />
+            <TableView fx:id="productList" layoutX="74.0" layoutY="106.0" onMouseClicked="#MouseClick" prefHeight="683.0" prefWidth="680.0">
+              <columns>
+                <TableColumn fx:id="col_id" prefWidth="96.0" text="product id" />
+                <TableColumn fx:id="col_name" prefWidth="109.0" text="product name" />
+                  <TableColumn fx:id="col_des" prefWidth="102.0" text="Description " />
+                  <TableColumn fx:id="col_size" prefWidth="77.0" text="size" />
+                  <TableColumn fx:id="col_acce" minWidth="0.0" prefWidth="104.0" text="accessories" />
+                  <TableColumn fx:id="col_mcost" minWidth="0.0" prefWidth="92.333251953125" text="making cost" />
+                  <TableColumn fx:id="col_uprice" minWidth="0.0" prefWidth="127.666748046875" text="unit price" />
+              </columns>
+            </TableView>
+            <TextField fx:id="search" layoutX="539.0" layoutY="55.0" prefHeight="30.0" prefWidth="203.0" promptText="Search" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

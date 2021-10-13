@@ -1,0 +1,75 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.left-pane{
+    -fx-background-color: #2196f3;
+    -fx-border-color: #151928;
+    -fx-border-width: 0px 2px 0px 0px;
+    -fx-text-color: white;
+}
+.textfield{
+    -fx-background-color: transparent;
+    -fx-text-color: white;
+}
+.image-view{
+    -fx-border-color: #151928;
+    -fx-border-width: 0px 0px 2px 0px;
+}
+.right-pane
+{
+     -fx-background-color: #151928;
+}
+.title{
+    -fx-background-color: #2196f3;
+}
+.vbox1{
+    -fx-background-color: linear-gradient(to right,#FFDB58,#FDD017);
+    -fx-background-radius: 5px;
+}
+.vbox2{
+    -fx-background-color: linear-gradient(to right,#E040FB,#D500F9);
+    -fx-background-radius: 5px;
+}
+.vbox3{
+    -fx-background-color: linear-gradient(to right,#57FEFF,#00FFFF);
+    -fx-background-radius: 5px;
+}
+.btn{
+    -fx-background-color: transparent;
+    
+}
+.btn:hover{
+    -fx-font-weight: bold;
+    -fx-text-fill: indigo;
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+    -fx-border-width: 2;
+}
+.imagebtn{
+     -fx-background-color: transparent;
+}
+
+.imagebtn:hover{
+    -fx-border-color: black;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+}
+.pane_round{
+   -fx-border-color: black;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+}
+
+
+
+
+
+
+
+
+
+

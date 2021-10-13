@@ -1,0 +1,60 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 26, 2021, 1:33:12 PM
+    Author     : Mohammad Rasel
+*/
+
+
+.button {
+    -fx-font-weight: bold;
+    -fx-background-color: #63a4ff;
+    -fx-background-radius: 5;
+    -fx-fontsize: 25;
+    -fx-text-fill: black;
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+    -fx-border-width: 1;
+}
+
+
+
+.button:hover {
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-fontsize: 25;
+    -fx-text-fill: #5B5A5A;
+    -fx-border-color: #5B5A5A;
+    -fx-border-radius: 7;
+    -fx-border-width: 3;
+}
+
+.button:pressed{
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-fontsize: 25;
+    -fx-text-fill: #5B5A5A;
+    -fx-border-color: #5B5A5A;
+    -fx-border-radius: 7;
+    -fx-border-width: 3;
+    -fx-rotate: 10;
+    
+}
+
+.button:focused{
+    -fx-font-weight: bold;
+    -fx-background-color: #b3e5fc;
+    -fx-background-radius: 5;
+    -fx-fontsize: 25;
+    -fx-text-fill: black;
+    -fx-border-color: #5B5A5A;
+    -fx-border-radius: 5;
+    -fx-border-width: 3;
+    
+}
+

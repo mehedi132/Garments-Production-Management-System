@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="480.0" styleClass="parent" stylesheets="@styleLogin.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="garments.management.system.AdsigninadController">
+    <children>
+      <VBox alignment="CENTER_LEFT" prefHeight="480.0" prefWidth="480.0" styleClass="blue-panel" stylesheets="@styleLogin.css">
+         <children>
+            <Label prefHeight="34.0" prefWidth="69.0" text="Log In" textFill="#2196f3">
+               <VBox.margin>
+                  <Insets left="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0" styleClass="tf_box" stylesheets="@styleLogin.css">
+               <children>
+                  <TextField fx:id="aduserid" prefHeight="26.0" prefWidth="476.0" promptText="user id" styleClass="tf_box" stylesheets="@styleLogin.css">
+                     <font>
+                        <Font name="Times New Roman" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="25.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" size="19.0">
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="200.0" styleClass="tf_box" stylesheets="@styleLogin.css">
+               <children>
+                  <PasswordField fx:id="pass" prefHeight="31.0" prefWidth="390.0" promptText="user password">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="25.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Times New Roman" size="16.0" />
+                     </font>
+                  </PasswordField>
+                  <FontAwesomeIconView fill="WHITE" glyphName="LOCK" size="20">
+                     <HBox.margin>
+                        <Insets right="40.0" top="15.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#gotohomepage" prefHeight="31.0" prefWidth="386.0" styleClass="blue-btn" stylesheets="@styleLogin.css" text="Sign In" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" left="25.0" right="15.0" top="15.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

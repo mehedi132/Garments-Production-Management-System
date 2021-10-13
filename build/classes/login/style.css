@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25-Mar-2021, 03:49:19
+    Author     : User
+*/
+
+.parent{
+    -fx-background-color: transparent;
+}
+.pane{
+   -fx-background-color: #2196f3; 
+}
+.trans-btn-white-border{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+    -fx-text-fill: black;
+}
+.white-pane{
+    -fx-background-color: #ffffff;
+}
+.blue-panel{
+    -fx-background-color: #151928;
+}
+.tf_box{
+    -fx-border-color: #DEDEE4;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-text-color: white;
+}
+.blue-btn{
+    -fx-background-color: #2196f3;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+    -fx-border-width: 1;
+}
+.blue-btn:hover {
+    -fx-font-weight: bold;
+    -fx-background-color: #b3e5fc;
+    -fx-background-radius: 5;
+     -fx-fontsize: 25px;
+    -fx-text-fill: #5B5A5A;
+    -fx-border-color: #5B5A5A;
+    -fx-border-radius: 7;
+    -fx-border-width: 3;
+}
+.blue-btn:pressed{
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-fontsize: 25;
+    -fx-text-fill: #5B5A5A;
+    -fx-border-color: #5B5A5A;
+    -fx-border-radius: 7;
+    -fx-border-width: 3;
+    -fx-rotate: 7;
+    
+}
+

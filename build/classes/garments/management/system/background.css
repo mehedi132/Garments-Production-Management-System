@@ -1,0 +1,20 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-Mar-2021, 13:24:03
+    Author     : User
+*/
+.bodybg{
+    -fx-background-image: url("fashion.jpg");
+}
+
+.adminbtn:hover{
+    -fx-font-weight: bold;
+    -fx-border-color: white;
+    -fx-border-radius: 5;
+    -fx-border-width: 3;
+}
+

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="garments.management.system.DashBoardController">
+    <stylesheets>
+        <URL value="@dashboard.css" />
+    </stylesheets>
+    <children>
+      <Pane prefHeight="650.0" prefWidth="1000.0" styleClass="right-pane" stylesheets="@dashboard.css">
+         <children>
+            <Pane prefHeight="650.0" prefWidth="300.0" styleClass="left-pane" stylesheets="@dashboard.css">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="400.0" layoutX="75.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@bags-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutY="146.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="300.0" styleClass="btn" stylesheets="@dashboard.css" text="Dashboard" textFill="INDIGO">
+                     <font>
+                        <Font name="Segoe UI Bold" size="32.0" />
+                     </font>
+                     <padding>
+                        <Insets left="8.0" top="12.0" />
+                     </padding></Button>
+                  <FontAwesomeIconView glyphName="ARCHIVE" layoutX="28.0" layoutY="201.0" size="32" text="" />
+                  <Button layoutX="-2.0" layoutY="227.0" mnemonicParsing="false" onAction="#gotoBestSellingPage" prefHeight="69.0" prefWidth="300.0" styleClass="btn" stylesheets="@dashboard.css" text="Best Selling">
+                     <font>
+                        <Font size="32.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="HEART" layoutX="27.0" layoutY="272.0" size="32" text="" />
+                  <Button layoutX="-2.0" layoutY="299.0" mnemonicParsing="false" onAction="#gotomakeorderpage" prefHeight="69.0" prefWidth="300.0" styleClass="btn" stylesheets="@dashboard.css" text="Make Order">
+                     <font>
+                        <Font size="32.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="MONEY" layoutX="26.0" layoutY="346.0" size="32" text="" />
+                  <Button layoutX="-2.0" layoutY="370.0" mnemonicParsing="false" onAction="#gotomyorderspage" prefHeight="69.0" prefWidth="300.0" styleClass="btn" stylesheets="@dashboard.css" text="My Orders">
+                     <font>
+                        <Font size="32.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="CLIPBOARD" layoutX="28.0" layoutY="415.0" size="32" text="" />
+                  <Button layoutY="439.0" mnemonicParsing="false" onAction="#gotouserprofilepage" prefHeight="69.0" prefWidth="300.0" styleClass="btn" stylesheets="@dashboard.css" text="User Profile">
+                     <font>
+                        <Font size="32.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="USER" layoutX="30.0" layoutY="484.0" size="32" text="" />
+                  <Button layoutY="505.0" mnemonicParsing="false" onAction="#gotomycartpage" prefHeight="69.0" prefWidth="300.0" styleClass="btn" stylesheets="@dashboard.css" text="My cart">
+                     <font>
+                        <Font size="32.0" />
+                     </font></Button>
+                  <ImageView fitHeight="49.0" fitWidth="62.0" layoutX="31.0" layoutY="515.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cart.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="300.0" layoutY="13.0" prefHeight="63.0" prefWidth="685.0" styleClass="title" stylesheets="@dashboard.css">
+               <children>
+                  <Label layoutX="43.0" layoutY="7.0" text="Welcome to MNR Garments !">
+                     <font>
+                        <Font name="Times New Roman Bold" size="44.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="300.0" layoutY="83.0" prefHeight="563.0" prefWidth="692.0" style="-fx-background-color: pink;" stylesheets="@dashboard.css">
+               <children>
+                  <Label layoutX="8.0" text="All Products">
+                     <font>
+                        <Font name="Segoe UI" size="26.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <ScrollPane layoutY="42.0" prefHeight="515.0" prefWidth="685.0" styleClass="btn" stylesheets="@dashboard.css">
+                     <content>
+                        <Pane prefHeight="703.0" prefWidth="670.0" style="-fx-background-color: pink;">
+                           <children>
+                              <Pane layoutX="16.0" prefHeight="200.0" prefWidth="317.0" style="-fx-background-color: black;" styleClass="pane_round" stylesheets="@dashboard.css">
+                                 <children>
+                                    <ImageView fitHeight="206.0" fitWidth="196.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Purple_fullshirt.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="27.0" prefHeight="63.0" prefWidth="94.0" text="Purple Full Sleeve Shirt" textFill="WHITE" wrapText="true">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="189.0" layoutY="121.0" prefHeight="42.0" prefWidth="117.0" text="Price : $ 7.55" textFill="WHITE">
+                                       <font>
+                                          <Font name="Times New Roman Bold Italic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Button layoutX="4.0" mnemonicParsing="false" onAction="#gotomakeorderpage" prefHeight="201.0" prefWidth="316.0" stylesheets="@dashboard.css">
+                                       <styleClass>
+                                          <String fx:value="imagebtn" />
+                                          <String fx:value="pane_round" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="355.0" layoutY="211.0" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: black;" styleClass="pane_round" stylesheets="@dashboard.css">
+                                 <children>
+                                    <ImageView fitHeight="206.0" fitWidth="196.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@bluepolofront_1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="186.0" layoutY="23.0" prefHeight="63.0" prefWidth="110.0" text="Light Blue Polo T-Shirt" textFill="WHITE" wrapText="true">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="176.0" layoutY="118.0" prefHeight="42.0" prefWidth="113.0" text="Price : $ 8.25" textFill="WHITE">
+                                       <font>
+                                          <Font name="Times New Roman Bold Italic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Button layoutX="-8.0" mnemonicParsing="false" onAction="#gotomakeorderpage" prefHeight="201.0" prefWidth="316.0" stylesheets="@dashboard.css">
+                                       <styleClass>
+                                          <String fx:value="imagebtn" />
+                                          <String fx:value="pane_round" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="353.0" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: black;" styleClass="pane_round" stylesheets="@dashboard.css">
+                                 <children>
+                                    <ImageView fitHeight="212.0" fitWidth="170.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@blue_fullshirt.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="180.0" layoutY="27.0" prefHeight="63.0" prefWidth="105.0" text="Navy Blue Full Sleeve Shirt" textFill="WHITE" wrapText="true">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="172.0" layoutY="121.0" prefHeight="42.0" prefWidth="113.0" text="Price : $ 7.55" textFill="WHITE">
+                                       <font>
+                                          <Font name="Times New Roman Bold Italic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Button mnemonicParsing="false" onAction="#gotomakeorderpage" prefHeight="201.0" prefWidth="300.0" stylesheets="@dashboard.css">
+                                       <styleClass>
+                                          <String fx:value="imagebtn" />
+                                          <String fx:value="pane_round" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="14.0" layoutY="211.0" prefHeight="200.0" prefWidth="308.0" style="-fx-background-color: black;" styleClass="pane_round" stylesheets="@dashboard.css">
+                                 <children>
+                                    <ImageView fitHeight="206.0" fitWidth="196.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@red_polo.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="167.0" layoutY="27.0" prefHeight="63.0" prefWidth="126.0" text="Red Half Sleeve Polo T-Shirt" textFill="WHITE" wrapText="true">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="159.0" layoutY="121.0" prefHeight="42.0" prefWidth="126.0" text="Price : $ 8.25" textFill="WHITE">
+                                       <font>
+                                          <Font name="Times New Roman Bold Italic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Button layoutX="4.0" mnemonicParsing="false" onAction="#gotomakeorderpage" prefHeight="201.0" prefWidth="300.0" stylesheets="@dashboard.css">
+                                       <styleClass>
+                                          <String fx:value="imagebtn" />
+                                          <String fx:value="pane_round" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="10.0" layoutY="427.0" prefHeight="200.0" prefWidth="317.0" style="-fx-background-color: black;" styleClass="pane_round" stylesheets="@dashboard.css">
+                                 <children>
+                                    <ImageView fitHeight="201.0" fitWidth="191.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@white_halfShirt.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="27.0" prefHeight="63.0" prefWidth="94.0" text="White Half Sleeve Shirt" textFill="WHITE" wrapText="true">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="189.0" layoutY="121.0" prefHeight="42.0" prefWidth="117.0" text="Price : $ 5.55" textFill="WHITE">
+                                       <font>
+                                          <Font name="Times New Roman Bold Italic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Button layoutX="1.0" mnemonicParsing="false" onAction="#gotomakeorderpage" prefHeight="201.0" prefWidth="316.0" stylesheets="@dashboard.css">
+                                       <styleClass>
+                                          <String fx:value="imagebtn" />
+                                          <String fx:value="pane_round" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="344.0" layoutY="427.0" prefHeight="200.0" prefWidth="317.0" style="-fx-background-color: black;" styleClass="pane_round" stylesheets="@dashboard.css">
+                                 <children>
+                                    <ImageView fitHeight="206.0" fitWidth="196.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@stripe_halfshirt.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="27.0" prefHeight="63.0" prefWidth="94.0" text="Multi Stripe Half Sleeve Shirt" textFill="WHITE" wrapText="true">
+                                       <font>
+                                          <Font name="Times New Roman Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="196.0" layoutY="121.0" prefHeight="42.0" prefWidth="110.0" text="Price : $ 5.55" textFill="WHITE">
+                                       <font>
+                                          <Font name="Times New Roman Bold Italic" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Button layoutX="1.0" mnemonicParsing="false" onAction="#gotomakeorderpage" prefHeight="201.0" prefWidth="316.0" stylesheets="@dashboard.css">
+                                       <styleClass>
+                                          <String fx:value="imagebtn" />
+                                          <String fx:value="pane_round" />
+                                       </styleClass>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </content></ScrollPane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

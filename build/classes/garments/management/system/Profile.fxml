@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="garments.management.system.ProfileController">
+    <stylesheets>
+        <URL value="@dashboard.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutY="-6.0" prefHeight="650.0" prefWidth="1000.0" styleClass="right-pane" stylesheets="@dashboard.css">
+         <children>
+            <Pane prefHeight="650.0" prefWidth="300.0" styleClass="left-pane" stylesheets="@dashboard.css">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="400.0" layoutX="75.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@bags-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="18.0" layoutY="165.0" mnemonicParsing="false" onAction="#gotodashboardpage" prefHeight="63.0" prefWidth="268.0" styleClass="btn" stylesheets="@dashboard.css" text="Dashboard">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="ARCHIVE" layoutX="44.0" layoutY="209.0" size="32" text="" />
+                  <Button layoutX="21.0" layoutY="237.0" mnemonicParsing="false" onAction="#gotoBestSellingPage" prefHeight="49.0" prefWidth="268.0" styleClass="btn" stylesheets="@dashboard.css" text="Best Selling">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="HEART" layoutX="44.0" layoutY="274.0" size="32" text="" />
+                  <Button layoutX="21.0" layoutY="301.0" mnemonicParsing="false" onAction="#gotomakeorderpage" prefHeight="49.0" prefWidth="268.0" styleClass="btn" stylesheets="@dashboard.css" text="Make Order">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="MONEY" layoutX="43.0" layoutY="336.0" size="32" text="" />
+                  <Button layoutX="21.0" layoutY="361.0" mnemonicParsing="false" onAction="#gotomyorderspage" prefHeight="49.0" prefWidth="268.0" styleClass="btn" text="My orders">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="CLIPBOARD" layoutX="44.0" layoutY="396.0" size="32" text="" />
+                  <Button layoutX="21.0" layoutY="420.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="268.0" style="-fx-text-fill: indigo;" styleClass="btn" stylesheets="@dashboard.css" text="User Profile">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font></Button>
+                  <FontAwesomeIconView glyphName="USER" layoutX="35.0" layoutY="465.0" size="32" text="" />
+                  <Button layoutX="18.0" layoutY="495.0" mnemonicParsing="false" onAction="#gotomycartpage" prefHeight="49.0" prefWidth="268.0" styleClass="btn" text="My Cart">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                  <ImageView fitHeight="49.0" fitWidth="62.0" layoutX="35.0" layoutY="498.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cart.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="300.0" layoutY="13.0" prefHeight="63.0" prefWidth="685.0" styleClass="title" stylesheets="@dashboard.css">
+               <children>
+                  <Label layoutX="40.0" layoutY="8.0" text="Welcome to MNR Garments !">
+                     <font>
+                        <Font name="Times New Roman Bold" size="44.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="312.0" layoutY="98.0" text="Want to Update Information?" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="22.0" />
+               </font>
+            </Label>
+            <Button layoutX="657.0" layoutY="93.0" mnemonicParsing="false" onAction="#edit_button" prefHeight="39.0" prefWidth="119.0" styleClass="blue-btn" stylesheets="@styleLogin.css" />
+            <Label layoutX="717.0" layoutY="98.0" text="Edit">
+               <font>
+                  <Font name="Segoe UI Bold" size="22.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView glyphName="EDIT" layoutX="670.0" layoutY="123.0" size="32" />
+            <TextField fx:id="name" layoutX="312.0" layoutY="149.0" prefHeight="33.0" prefWidth="300.0" promptText="Full Name">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="address" layoutX="312.0" layoutY="198.0" prefHeight="33.0" prefWidth="300.0" promptText="Address">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="country" layoutX="312.0" layoutY="243.0" prefHeight="33.0" prefWidth="300.0" promptText="Country">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="email" layoutX="312.0" layoutY="292.0" prefHeight="33.0" prefWidth="300.0" promptText="Email">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="number" layoutX="312.0" layoutY="342.0" prefHeight="33.0" prefWidth="300.0" promptText="Phone Number">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="age" layoutX="312.0" layoutY="390.0" prefHeight="33.0" prefWidth="82.0" promptText="Age">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </TextField>
+            <Button layoutX="437.0" layoutY="390.0" mnemonicParsing="false" onAction="#update_button" prefHeight="39.0" prefWidth="164.0" styleClass="blue-btn" stylesheets="@styleLogin.css" />
+            <Label layoutX="512.0" layoutY="398.0" text="Update">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="39.0" fitWidth="32.0" layoutX="462.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@refresh.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="312.0" layoutY="450.0" text="Want to change password?" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="22.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="c_pass" layoutX="312.0" layoutY="491.0" prefHeight="32.0" prefWidth="300.0" promptText="curennt password" />
+            <PasswordField fx:id="new_pass" layoutX="312.0" layoutY="539.0" prefHeight="32.0" prefWidth="300.0" promptText="new password" />
+            <PasswordField fx:id="mew_pass_again" layoutX="312.0" layoutY="583.0" prefHeight="32.0" prefWidth="300.0" promptText="again new password" />
+            <Button layoutX="662.0" layoutY="574.0" mnemonicParsing="false" onAction="#update_pass" prefHeight="39.0" prefWidth="164.0" styleClass="blue-btn" stylesheets="@styleLogin.css" />
+            <Label layoutX="737.0" layoutY="582.0" text="Update">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="39.0" fitWidth="32.0" layoutX="686.0" layoutY="578.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@refresh.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="658.0" layoutY="180.0" prefHeight="70.0" prefWidth="285.0" text="Thank You! Hope you had a great experience with us." textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font>
+            </Label>
+            <Button layoutX="662.0" layoutY="268.0" mnemonicParsing="false" onAction="#goto_Login_again" prefHeight="49.0" prefWidth="164.0" styleClass="blue-btn" stylesheets="@styleLogin.css" />
+            <Label layoutX="733.0" layoutY="281.0" text="Log Out">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView glyphName="SIGN_OUT" layoutX="685.0" layoutY="302.0" size="32" wrappingWidth="34.28569436073303" />
+            
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
